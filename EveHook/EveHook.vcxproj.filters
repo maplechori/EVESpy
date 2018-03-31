@@ -24,6 +24,9 @@
     <ClInclude Include="..\DirectXTex\ScreenGrab\ScreenGrab.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.c">
@@ -38,5 +41,13 @@
     <ClCompile Include="..\DirectXTex\ScreenGrab\ScreenGrab.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EveHook.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="stargate.xml" />
   </ItemGroup>
 </Project>
