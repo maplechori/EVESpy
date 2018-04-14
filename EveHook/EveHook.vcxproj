@@ -72,6 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Development\opencv_build\install\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -96,7 +97,8 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>evehook.def</ModuleDefinitionFile>
-      <AdditionalDependencies>D:\Development\EVESpy\DirectXTex\DirectXTex\Bin\Desktop_2017_Win10\Win32\Debug\DirectXTex.lib;D:\Development\Detours\lib.X86\detours.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\Development\EVESpy\DirectXTex\DirectXTex\Bin\Desktop_2017_Win10\Win32\Debug\DirectXTex.lib;D:\Development\Detours\lib.X86\detours.lib;D:\Development\opencv_build\install\x86\vc15\lib\opencv_core341d.lib;D:\Development\opencv_build\install\x86\vc15\lib\opencv_objdetect341d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Development\opencv_build\install\x86\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>
