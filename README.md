@@ -6,4 +6,9 @@ Basically this set of projects allow you to inject a DLL into EVE online. I used
 
 I then trained a haar OpenCV model to identify the 'yellow' gate.
 
-Further work will involve automating the process of traveling using that model.
+### Further work required: 
+
+* Clean up
+* Refactoring and automation
+
+Ideally this should all be automated to navigate automatically to the target system. 
